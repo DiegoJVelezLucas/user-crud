@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+   }
+   body{
+     background-image: url(../public/scifi.jpg);
+     background-size:cover;
+     background-repeat:no-repeat;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+    .general-container{
+     display: flex;
+     padding: 1rem 2rem;
+     gap: 10px;
+     flex-direction: column;
+   } 
+   
+   .list-style{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 5px;
+    max-width: 300px;
+   }
+
+   .content-style{
+    border: 2px solid rgb(136, 113, 113);
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 2px 2px 8px hsl(222, 46%, 53%);
+    padding: 5px;
+    min-width: 250px;
+    max-width: 300px;    
+   }
+   button{
+    margin: 1px;
+    padding: 2px;
+    background-color: rgb(134, 129, 166);
+    color: aliceblue;
+    border: 1px solid rgb(160, 135, 135);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px hsl(65, 29%, 49%);
+    
+   }
+   
+   .input-style{
+    border: 3px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+  }
+  form{
+    padding: 1rem;
+    
+    border: none;
+    border-radius: 1rem;
+    align-self: flex-start;
+    background-color: rgb(181, 196, 215);
+    box-shadow: 2px 2px 8px hsl(0, 25%, 45%);
+    flex-grow: 1;
+    max-width: 400px;
+  }
+  @media screen and (min-width: 772px) {
+    .general-container{
+      flex-direction: row;
+    }
+  }
+  input{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    
+  }
